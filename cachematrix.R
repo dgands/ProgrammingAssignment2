@@ -1,6 +1,6 @@
-##  This first set finds the inverse of the matrix & caches the value so we can retrieve it later on
+##  This function finds the inverse of the matrix & caches the value so we can retrieve it later on
 
-## Saving/caching matrix
+## First set: saving/caching matrix for retrieval 
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
-## This second set is used to actually get the inverse of the matrix saved/cached in first set
+## Second set: get the inverse of the matrix saved/cached in first set
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
